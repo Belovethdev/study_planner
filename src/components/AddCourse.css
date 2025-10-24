@@ -1,0 +1,87 @@
+.add-course-form {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eaeaea;
+}
+
+.form-header h2 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 15px;
+  align-items: start;
+}
+
+.course-input,
+.lessons-input {
+  padding: 12px 15px;
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.course-input:focus,
+.lessons-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.course-input {
+  grid-column: 1;
+}
+
+.lessons-input {
+  grid-column: 2;
+}
+
+.add-button {
+  grid-column: 3;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.add-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .course-input,
+  .lessons-input,
+  .add-button {
+    grid-column: 1;
+    width: 100%;
+  }
+}
