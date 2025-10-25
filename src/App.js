@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>🚀 Frontend Developer Study Planner</h1>
+        <h1>Frontend Developer Study Planner</h1>
         <p>Track your learning progress and master frontend technologies</p>
       </header>
       
